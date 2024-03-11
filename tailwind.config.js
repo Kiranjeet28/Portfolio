@@ -12,6 +12,7 @@ export default {
         'bg':"url('/src/assets/Neutral Creative Professional LinkedIn Article Cover Image.png')"
       }
     },
+   
   },
   plugins: [],
 }

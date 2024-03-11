@@ -70,7 +70,7 @@ function App() {
       <div className='pb-10 m-0 w-min-full  bg-black dark:bg-gray-200 '>
         <Header obj={<ThemeBtn />} />
         <Banner />
-        <p className='text-gray-200 font-semibold m-2 ml-7 p-3 pb-0 mb-0 text-left  text-xl  dark:text-gray-800 md: md:text-[4vh] '>Projects</p>
+        <p className='text-gray-200 font-semibold m-2 ml-7 p-3 pb-0 mb-0 text-left  text-xl  dark:text-gray-800'>Projects</p>
         {/*  Major projects  */}
         <div className='flex flex-wrap'>
           <MajorComp
@@ -94,7 +94,7 @@ function App() {
         </div>
       
       {/* What I know  */}
-      <p className='text-gray-200 ml-7 font-semibold mt-8 p-3 pb-0 text-left  text-xl mb-2 dark:text-gray-800 md:text-[4vh] md:mb-4 '> What I Know</p>
+      <p className='text-gray-200 ml-7 font-semibold mt-8 p-3 pb-0 text-left  text-xl mb-2 dark:text-gray-800  md:mb-4 '> What I Know</p>
       <AllKnow />
       <MoreP
         arr={MParr.map((arr) => (
