@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'image':"url('./src/assets/IMG-20240102-WA0056.jpg')",
-        'bg':"url('./src/assets/Neutral Creative Professional LinkedIn Article Cover Image.png')"
+        
+        'bg':"url('/src/assets/Neutral Creative Professional LinkedIn Article Cover Image.png')"
       }
     },
   },

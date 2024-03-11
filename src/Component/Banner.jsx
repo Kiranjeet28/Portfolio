@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-import img from '../assets/IMG-20240102-WA0056.jpg'
 export default function Banner(){
     const [data,useData]= useState([])
     useEffect(()=>{
