@@ -26,13 +26,16 @@ export default function Banner(){
          
           <div className='flex justify-evenly'>
             <a href="https://github.com/kiranjeet28">
-               <img src='https://cdn-1.webcatalog.io/catalog/github/github-icon.png' alt="" className='h-7 rounded-md '/>
+               <img src='https://cdn-1.webcatalog.io/catalog/github/github-icon.png' alt="" className='h-[4vh] rounded-md '/>
             </a>
             <a href="https://www.linkedin.com/in/kiranjeet-kour-3823ba268"> 
-            <img src='https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png' alt="" className='h-7 rounded-md '/>
+            <img src='https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png' alt="" className='h-[4vh] rounded-md '/>
             </a>
             <a href="https://twitter.com/KourSuri5352"> 
-            <img src="https://th.bing.com/th/id/OIP.PjG-Z-6wXH8l-9kLJKLdqgAAAA?rs=1&pid=ImgDetMain" alt="" className='h-7 rounded-md '/>
+            <img src="https://th.bing.com/th/id/OIP.PjG-Z-6wXH8l-9kLJKLdqgAAAA?rs=1&pid=ImgDetMain" alt="" className='h-[3vh] rounded-md '/>
+            </a>
+            <a href="mailto:kiranjeetkour144@gmail.com"> 
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" alt="" className='h-[3vh] rounded-md '/>
             </a>
           </div>
         
