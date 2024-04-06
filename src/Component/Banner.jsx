@@ -28,7 +28,7 @@ export default function Banner(){
             <a href="https://github.com/kiranjeet28">
                <img src='https://cdn-1.webcatalog.io/catalog/github/github-icon.png' alt="" className='h-7 rounded-md '/>
             </a>
-            <a href="www.linkedin.com/in/kiranjeet-kour-3823ba268"> 
+            <a href="https://www.linkedin.com/in/www.linkedin.com/in/kiranjeet-kour-3823ba268"> 
             <img src='https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png' alt="" className='h-7 rounded-md '/>
             </a>
             <a href="https://twitter.com/KourSuri5352"> 
