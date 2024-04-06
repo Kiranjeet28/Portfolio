@@ -19,7 +19,7 @@ export default function Banner(){
 
                 <div className='p-0 m-0  text-center' >
                     <div className='text-black bold text-2xl font-bold font-mono p-0 m-0 md:relative md:bottom-32 md:text-3xl md:m-3  dark:text-white md:text-black md:dark:text-black'>Kiranjeet Kour</div>
-                    <p className=" text-black text-[10px] p-0 m-0 pb-2 md:text-[15px] md:font-semibold shadow-black dark:text-white md:dark:text-black ">{data.bio}</p>
+                    <p className=" text-black text-[10px] p-0 m-0 pb-2 md:text-[17px] md:font-semibold  font-bold shadow-black dark:text-white md:dark:text-black  overflow ">{data.bio}</p>
 
                 </div>
           </div>
