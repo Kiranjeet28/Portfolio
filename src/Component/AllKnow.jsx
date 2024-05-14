@@ -30,6 +30,16 @@ export default function AllKnow(){
         name: "Tailwind",
         bg:"border-red-700"
     
+      },
+      {
+        id:6,
+        name: "TypeScript",
+        bg:"border-blue-700"
+      },
+      {
+        id:7,
+        name: "Next Js ",
+        bg:"border-blue-900"
       }]
 
       // Backend array 
@@ -43,6 +53,11 @@ export default function AllKnow(){
           id: 2,
           name:"Node JS",
           bg:"border-orange-600"
+        },
+        {
+          id: 3,
+          name:"Express",
+          bg:"border-blue-600"
         }
       ]
       // Database

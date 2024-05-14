@@ -82,14 +82,14 @@ function App() {
           <MajorComp
             img='https://th.bing.com/th/id/OIP.r4kJoxYZN2_2tQjUdRdtkQHaGF?rs=1&pid=ImgDetMain'
             title="Youtube Clone"
-            desc="Currently under development"
+            desc="Currently under development : React ,Appwrite, MongoDB, NodeJS, Express,Tailwind Css ,OAuth "
             link="https://github.com/Kiranjeet28/Youtube-clone"
           />
           <MajorComp
             img='https://th.bing.com/th/id/OIP.DVs962k6ELUYdurULbV_fQHaHX?rs=1&pid=ImgDetMain'
-            title="Full Stack java Project"
-            desc="Currently under development"
-            link="https://github.com/Kiranjeet28/Full-Stack-Java-Project"
+            title="Quiz Application with OTP Authentication "
+            desc="Java , Maven plugin , MySQL ,Auth, MicroServices  "
+            link="https://github.com/Kiranjeet28/Quiz-application-with-Authentication-"
           />
         </div>
       
