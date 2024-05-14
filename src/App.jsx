@@ -67,7 +67,7 @@ function App() {
 
   return (
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
-      <div className='pb-10 m-0 w-min-full  bg-black dark:bg-gray-200 '>
+      <div className='pb-10 m-0 w-min-full  bg-black dark:bg-gray-200'>
         <Header obj={<ThemeBtn />} />
         <Banner />
         <p className='text-gray-200 font-semibold m-2 ml-7 p-3 pb-0 mb-0 text-left  text-xl  dark:text-gray-800'>Projects</p>
@@ -96,6 +96,8 @@ function App() {
       {/* What I know  */}
       <p className='text-gray-200 ml-7 font-semibold mt-8 p-3 pb-0 text-left  text-xl mb-2 dark:text-gray-800  md:mb-4 '> What I Know</p>
       <AllKnow />
+
+      <div className= 'w-[100vw] flex justify-center items-center'>
       <MoreP
         arr={MParr.map((arr) => (
           <div key={arr.id}>
@@ -108,6 +110,7 @@ function App() {
           </div>
         ))}
       />
+      </div>
       </div>
     </ThemeProvider>
   );

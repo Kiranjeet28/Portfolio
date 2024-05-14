@@ -12,4 +12,3 @@ export default function MoreP({arr}){
         </div>
     )
 }
-// bg,img,title,desc
