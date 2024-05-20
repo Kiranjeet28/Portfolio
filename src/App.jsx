@@ -7,6 +7,7 @@ import MoreP from './Component/MoreP';
 import MP from './Component/InnerComponents/MP';
 import { ThemeProvider } from './contexts/theme';
 import ThemeBtn from './Component/ThemeBtn';
+import { FlipWords } from './Component/ui/flip-words';
 
 // Object
 const MParr = [
@@ -47,6 +48,8 @@ const MParr = [
   }
 ];
 
+let words = ["Java ", "Web Development" ]
+
 function App() {
   // Toggle
   const [themeMode, setThemeMode] = useState('light');
@@ -70,7 +73,7 @@ function App() {
       <div className='pb-10 m-0 w-min-full  bg-black dark:bg-gray-200'>
         <Header obj={<ThemeBtn />} />
         <Banner />
-        <p className='text-gray-200 font-semibold m-2 ml-7 p-3 pb-0 mb-0 text-left  text-xl  dark:text-gray-800 '>Projects</p>
+        <p className='text-gray-200 font-semibold m-2 ml-7 p-3 pb-0 mb-0 text-left  text-2xl  dark:text-gray-800 '> Full Stack <FlipWords words = {words}  /> Projects</p>
         {/*  Major projects  */}
         <div className='flex flex-wrap '>
           <MajorComp
