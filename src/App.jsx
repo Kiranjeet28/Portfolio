@@ -70,9 +70,9 @@ function App() {
       <div className='pb-10 m-0 w-min-full  bg-black dark:bg-gray-200'>
         <Header obj={<ThemeBtn />} />
         <Banner />
-        <p className='text-gray-200 font-semibold m-2 ml-7 p-3 pb-0 mb-0 text-left  text-xl  dark:text-gray-800'>Projects</p>
+        <p className='text-gray-200 font-semibold m-2 ml-7 p-3 pb-0 mb-0 text-left  text-xl  dark:text-gray-800 '>Projects</p>
         {/*  Major projects  */}
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap '>
           <MajorComp
             img='https://2.bp.blogspot.com/-NnVlV6FjZAg/UUVFCETnqMI/AAAAAAAAAGs/m6tSKlUyUXw/s1600/hide-your-private-files-and-folders.jpg'
             title="File Hiding"

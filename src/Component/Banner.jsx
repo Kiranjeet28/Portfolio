@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
+import {Vortex} from './ui/vortex';
 import IBanner from './InnerComponents/IBanner';
-
 export default function Banner() {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -19,9 +18,13 @@ export default function Banner() {
     return (
         <div>
         {isSmallScreen ? (
-            <BackgroundGradientAnimation>
+             <Vortex
+             backgroundColor="black"
+             baseHue={190}
+             rangeY={40}
+           >
                 <IBanner />
-            </BackgroundGradientAnimation>
+            </Vortex>
         ) : (
             <IBanner />
         )}
