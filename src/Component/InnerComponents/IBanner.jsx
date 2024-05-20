@@ -20,8 +20,8 @@ export default function IBanner(){
                     alt="Git D.p"
                 />
                 <div className='p-0 m-0 text-center'>
-                    <div className=' bold text-2xl font-bold font-mono p-0 m-0 md:relative md:bottom-32 md:text-3xl md:m-3 text-white md:text-black md:dark:text-black'>Kiranjeet Kour</div>
-                        <p className=" text-[10px] p-0 m-0 pb-2 md:text-[17px] md:font-semibold font-bold shadow-black text-white md:text-black overflow">{data.bio}</p>
+                    <div className=' bold text-2xl font-bold font-mono p-0 m-0 md:relative md:bottom-32 md:text-3xl md:m-3 text-white md:text-black md:dark:text-black dark:text-black'>Kiranjeet Kour</div>
+                        <p className=" text-[11px] p-0 m-0 pb-2 md:text-[17px] md:font-semibold font-bold dark:text-black shadow-black text-white md:text-black overflow">{data.bio}</p>
                 </div>
             </div>
             <div className='flex justify-evenly'>
