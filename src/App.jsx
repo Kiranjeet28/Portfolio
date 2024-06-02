@@ -85,7 +85,7 @@ function App() {
           <MajorComp
             img='https://th.bing.com/th/id/OIP.r4kJoxYZN2_2tQjUdRdtkQHaGF?rs=1&pid=ImgDetMain'
             title="Youtube Clone"
-            desc="Currently under development : React ,Appwrite, MongoDB, NodeJS, Express,Tailwind Css ,OAuth "
+            desc="React ,Appwrite, MongoDB, NodeJS, Express,Tailwind Css ,OAuth "
             link="https://github.com/Kiranjeet28/Youtube-clone"
           />
           <MajorComp
