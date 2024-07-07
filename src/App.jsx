@@ -43,6 +43,7 @@ function App() {
       <AllKnow />
 
       <div className= ''>
+      <p className='text-gray-200 ml-7 font-semibold mt-8 p-3 pb-0 text-left  text-xl mb-2 dark:text-gray-800  md:mb-4 '> More Projects</p>
       <MoreP
         arr={MParr.map((arr) => (
           <div key={arr.id}>

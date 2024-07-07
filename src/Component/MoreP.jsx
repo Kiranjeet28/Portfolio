@@ -4,8 +4,8 @@ export default function MoreP({arr}){
     
     
     return(
-         <div id='morep' className='  ' >
-            <p className=''>More Project</p>
+         <div id='morep' className='' >
+        
             <div className=''>
               {arr}
             </div>
