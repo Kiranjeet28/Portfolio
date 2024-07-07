@@ -1,11 +1,17 @@
 import { useState, useEffect } from 'react';
 import { FlipWords } from '../ui/flip-words';
 import { Highlight } from '../ui/hero-highlight';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export default function IBanner() {
     let words = ["Java", "Web"]
 
     const [data, setData] = useState([]);
+
+    useEffect(() => {
+        AOS.init();
+    })
 
     useEffect(() => {
         fetch('https://api.github.com/users/kiranjeet28')
@@ -19,9 +25,11 @@ export default function IBanner() {
         <div className=' p-4 h-auto flex flex-col md:flex-wrap md:bg-no-repeat md:bg-cover md:bg-bg'>
             <div className='flex md:flex-col '>
                 <img
+                    data-aos='zoom-in'
+                    data-aos-duration='3000'
                     src={data.avatar_url}
-                    className="rounded-[50%] p-0 m-0 md:mt-2  md:h-[21vh] h-28 md:max-w-48 md:relative md:self-center md:bottom-[-40px]"
-                    alt="Git D.p"
+                    className="rounded-[50%] p-0 m-0 md:mt-2  md:h-[21vh] h-28 md:max-w-48 md:relative md:self-center md:bottom-[-40px]   "
+                    alt=""
                 />
                 <div className='p-0 md:mt-4  text-center'>
                     <Highlight className=' bold  text-2xl font-bold font-mono p-0 m-0 md:relative md:bottom-40 md:text-4xl md:m-3  text-slate-100 '>Kiranjeet Kour</Highlight>
