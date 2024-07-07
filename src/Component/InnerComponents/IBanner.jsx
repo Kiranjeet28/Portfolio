@@ -3,36 +3,39 @@ import { FlipWords } from '../ui/flip-words';
 import { Highlight } from '../ui/hero-highlight';
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import FlippingCoin from './CoinFlip';
+import image from '../../assets/myimg.jpeg' 
 
 export default function IBanner() {
-    let words = ["Java", "Web"]
-
-    const [data, setData] = useState([]);
-
+    let words = ["Java", "Web"];
+    const [isFlipped, setIsFlipped] = useState(false); // Flag to track flip state
+  
     useEffect(() => {
-        AOS.init();
-    })
-
-    useEffect(() => {
-        fetch('https://api.github.com/users/kiranjeet28')
-            .then(response => response.json())
-            .then(data => {
-                setData(data);
-            });
+      AOS.init();
     }, []);
+  
+    const handleFlip = () => {
+      if (!isFlipped) {
+        setIsFlipped(true); // Set flipped flag to true before animation
+      }
+    };
 
     return (
         <div className=' p-4 h-auto flex flex-col md:flex-wrap md:bg-no-repeat md:bg-cover md:bg-bg'>
             <div className='flex md:flex-col '>
-                <img
+                <div className="rounded-[50%] p-0 m-0 md:mt-2  md:h-[21vh] h-28 md:max-w-48 md:relative md:self-center md:bottom-[-40px]   ">
+                <FlippingCoin imageUrl={image} onFlip={handleFlip} /> 
+
+                </div>
+                {/* <img
                     data-aos='zoom-in'
                     data-aos-duration='3000'
                     src={data.avatar_url}
                     className="rounded-[50%] p-0 m-0 md:mt-2  md:h-[21vh] h-28 md:max-w-48 md:relative md:self-center md:bottom-[-40px]   "
                     alt=""
-                />
+                /> */}
                 <div className='p-0 md:mt-4  text-center'>
-                    <Highlight className=' bold  text-2xl font-bold font-mono p-0 m-0 md:relative md:bottom-40 md:text-4xl md:m-3  text-slate-100 '>Kiranjeet Kour</Highlight>
+                    <Highlight className=' bold  text-2xl font-bold font-mono p-0 m-0 md:relative md:bottom-40 md:text-4xl  md:m-3  text-slate-100 '>Kiranjeet Kour </Highlight>
 
                     <h3 className=" text-[16px] p-1 m-0 pb-2 md:text-[25px] md:mt-0 mt-4 md:font-semibold font-bold dark:text-black shadow-black text-gray-100 md:text-black overflow md:ml-0 ml-3 ">Full Stack <span className=' from-indigo-500 via-indigo-400 to-indigo-700 bg-gradient-to-tr  rounded-xl  '>
                         <FlipWords className='  text-white text-[17px] md:text-[28px] font-bold' words={words} /></span> Development</h3>
