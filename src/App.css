@@ -88,9 +88,4 @@
   color: #888;
 }
 
-@media (min-width: 250px) {
-  #morep {
-    width: 90vw;
-  }
-}
 

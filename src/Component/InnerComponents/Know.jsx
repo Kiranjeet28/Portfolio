@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Know({title ,arr}){
     return(
         <div className={`w-72 p-5 m-auto mb-5  md:mt-0 rounded-lg bg-gray-700 dark:bg-gray-500  `}>

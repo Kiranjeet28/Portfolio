@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import {Vortex} from './ui/vortex';
+import { useState, useEffect } from 'react';
 import IBanner from './InnerComponents/IBanner';
+import { BackgroundGradient } from './ui/background-gradient';
 export default function Banner() {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -18,13 +18,13 @@ export default function Banner() {
     return (
         <div>
         {isSmallScreen ? (
-             <Vortex
+             <BackgroundGradient
              backgroundColor="black"
              baseHue={190}
              rangeY={40}
            >
                 <IBanner />
-            </Vortex>
+            </BackgroundGradient>
         ) : (
             <IBanner />
         )}

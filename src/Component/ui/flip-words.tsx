@@ -1,12 +1,11 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
 import { cn } from "../../../utils/cn";
-let interval: any;
 
 export const FlipWords = ({
   words,
-  duration = 2000,
+  duration = 3000,
   className,
 }: {
   words: string[];
@@ -14,29 +13,28 @@ export const FlipWords = ({
   className?: string;
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
+
+  // thanks for the fix Julian - https://github.com/Julian-AT
+  const startAnimation = useCallback(() => {
+    const word = words[words.indexOf(currentWord) + 1] || words[0];
+    setCurrentWord(word);
+    setIsAnimating(true);
+  }, [currentWord, words]);
 
   useEffect(() => {
-    startAnimation();
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  const startAnimation = () => {
-    let i = 0;
-    interval = setInterval(() => {
-      i++;
-      if (i === words.length) {
-        i = 0;
-      }
-      const word = words[i];
-      setCurrentWord(word);
-    }, duration);
-  };
+    if (!isAnimating)
+      setTimeout(() => {
+        startAnimation();
+      }, duration);
+  }, [isAnimating, duration, startAnimation]);
 
   return (
-    <AnimatePresence>
+    <AnimatePresence
+      onExitComplete={() => {
+        setIsAnimating(false);
+      }}
+    >
       <motion.div
         initial={{
           opacity: 0,
@@ -62,7 +60,7 @@ export const FlipWords = ({
           position: "absolute",
         }}
         className={cn(
-          " inline-block relative text-left dark:text-neutral-900 text-neutral-100 px-2",
+          "z-0 inline-block relative text-left text-indigo-700 px-2",
           className
         )}
         key={currentWord}
