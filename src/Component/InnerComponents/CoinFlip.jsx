@@ -11,7 +11,7 @@ function FlippingCoin ({ imageUrl, onFlip }) {
 
   useEffect(() => {
     const cylinderRadius = 90; // Adjusted size for the coin
-    const cylinderHeight = 10;
+    const cylinderHeight = 1;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);

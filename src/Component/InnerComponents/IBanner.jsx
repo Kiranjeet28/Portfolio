@@ -29,7 +29,7 @@ export default function IBanner() {
                 </div> */}
                 <img
                     data-aos='zoom-in'
-                    data-aos-duration='3000'
+                    data-aos-duration='2000'
                     src={image}
                     className="rounded-[50%] p-0 m-0 md:mt-2  md:h-[21vh] h-28 md:max-w-48 md:relative md:self-center md:bottom-[-40px]   "
                     alt=""

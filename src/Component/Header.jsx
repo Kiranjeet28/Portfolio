@@ -18,7 +18,7 @@ export default function Header({obj}){
       },)
   
     return(
-    <div className='bg-black dark:bg-gray-200 h-20 m-0 sticky p-4  top-[-1px] z-10 flex items-center justify-between '>
+    <div className='bg-black dark:bg-gray-200 h-16 m-0 sticky p-4  top-[-1px] z-10 flex items-center justify-between '>
             <button 
             className="dark:text-gray-950 m-0 relative top-[-3px]  text-white text-[6.5vh]"
             onClick={onChangeBtn}
