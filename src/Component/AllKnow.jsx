@@ -14,11 +14,13 @@ export default function AllKnow() {
         title="Frontend"
         arr={Frondend.map((arr) => (
           <div key={arr.id}>
-            {<GlareCard >
+            {
+              <GlareCard className="flex flex-col items-center justify-center">
               <WhatI
                 desc={arr.name}
                 bg={arr.bg} />
-            </GlareCard>}
+            </GlareCard>
+            }
           </div>
         ))}
       />

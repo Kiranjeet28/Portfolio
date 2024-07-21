@@ -7,6 +7,7 @@ import MajorProject from './Component/MajorProject';
 import { TypewriterEffectSmooth } from '../utils/ui/typewriter-effect';
 import 'aos/dist/aos.css';
 import Banner from './Component/Banner';
+import { Expericence } from './Component/Expericence';
 function App() {
  
 
@@ -18,7 +19,7 @@ function App() {
        
        {/* Major Project */}
        <TypewriterEffectSmooth
-       className='ml-6 md:ml-8 mt-4 mb-0' words={MajorText} />
+       className='ml-6 md:ml-8 mt-4 mb-0 ' words={MajorText} />
       <MajorProject/>
       {/* What I know  */}
       <p 
@@ -29,6 +30,13 @@ function App() {
       </p>
       <AllKnow />
 
+      <p 
+      className='text-gray-200 ml-7 font-semibold mt-8 p-3 pb-0 text-left  text-xl mb-2 dark:text-gray-800  md:mb-4 '
+      data-aos='zoom-out-right'
+      data-aos-duration='500'>
+         Experience
+      </p>
+<Expericence/>
       <div className= ''>
       <p 
       className='text-gray-200 ml-7 font-semibold mt-8 p-3 pb-0 text-left  text-xl mb-2 dark:text-gray-800  md:mb-4 '

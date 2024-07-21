@@ -7,7 +7,7 @@ import MajorProjectRoute from './Routes/MajorProjectRoute.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
+    <Route path='' element={<Layout />}>
       <Route path='/Portfolio' element={<App />} />
       <Route path='/Portfolio/MajorProject/:currentId' element={<MajorProjectRoute />} />
     </Route>
