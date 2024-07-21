@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { projects } from '../Data';
-import { Highlight } from '../Component/ui/hero-highlight';
-import ButtonX from '../Component/ui/button'; // Correct import to PascalCase
+import { Highlight } from '../../utils/ui/hero-highlight';
+import ButtonX from '../../utils/ui/button'; // Correct import to PascalCase
 import WhatI from '../Component/InnerComponents/WhatI';
+import { useEffect } from 'react';
 
 export default function MajorProjectRoute() {
     const { currentId } = useParams();
@@ -11,7 +12,9 @@ export default function MajorProjectRoute() {
     if (!project) {
         return <div>Project not found</div>;
     }
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='project-details'>
             <Highlight className='bold text-4xl font-bold font-mono md:text-4xl text-slate-100 mb-2 ml-8'>
@@ -47,8 +50,8 @@ export default function MajorProjectRoute() {
     ))}
 </div>
 
-            <p>{project.desc}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+            <p className='text-slate-100 dark:text-gray-800 font-mono text-lg m-5'>{project.desc}</p>
+            
         </div>
     );
 }

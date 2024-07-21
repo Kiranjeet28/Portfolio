@@ -4,7 +4,7 @@ import MoreP from './Component/MoreP';
 import MP from './Component/InnerComponents/MP';
 import { MParr, MajorText } from './Data';
 import MajorProject from './Component/MajorProject';
-import { TypewriterEffectSmooth } from './Component/ui/typewriter-effect';
+import { TypewriterEffectSmooth } from '../utils/ui/typewriter-effect';
 import 'aos/dist/aos.css';
 import Banner from './Component/Banner';
 function App() {

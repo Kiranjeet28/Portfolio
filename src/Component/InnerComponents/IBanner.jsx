@@ -1,6 +1,6 @@
 import {  useEffect } from 'react';
-import { FlipWords } from '../ui/flip-words';
-import { Highlight } from '../ui/hero-highlight';
+import { FlipWords } from '../../../utils/ui/flip-words';
+import { Highlight } from '../../../utils/ui/hero-highlight';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 // import FlippingCoin from './CoinFlip';

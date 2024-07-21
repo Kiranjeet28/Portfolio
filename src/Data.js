@@ -57,7 +57,7 @@ export const MParr = [
  export const Frondend = [{
     id: 1,
     name: "HTML",
-    bg: ""
+    bg: "border-orange-400"
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ export const MParr = [
   {
     id: 4,
     name: "React JS",
-    bg: "border-blue-500"
+    bg: "border-rose-500"
 
   },
   {
@@ -91,7 +91,12 @@ export const MParr = [
   {
     id: 7,
     name: "Next Js ",
-    bg: "border-blue-900"
+    bg: "border-lime-500"
+  },
+  {
+    id: 8,
+    name: "Spring",
+    bg: "border-pink-600"
   }]
 
   // Backend array 
@@ -110,7 +115,23 @@ export const MParr = [
       id: 3,
       name: "Express",
       bg: "border-blue-600"
-    }
+    } ,{
+      id: 4,
+      name: "Rocket",
+      bg: "border-rose-500"
+  
+    },
+    {
+      id: 5,
+      name: "Rust",
+      bg: "border-red-700"
+  
+    },
+    {
+      id: 6,
+      name: "Prisma",
+      bg: "border-lime-500"
+    },
   ]
   // Database
 export  const Database = [
@@ -123,7 +144,12 @@ export  const Database = [
       id: 2,
       name: "MongoDB",
       bg: "border-blue-500"
-    }
+    },
+    {
+      id: 3,
+      name: "PostgreSQL",
+      bg: "border-lime-500"
+    },
   ]
 
   export const projects = [
@@ -155,7 +181,7 @@ export  const Database = [
         title: "Quiz Application with Auth",
         tech: ["Java ", "Maven plugin ", "MySQL ", "Auth ", "MicroServices "],
         link: "https://github.com/Kiranjeet28/Quiz-application-with-Authentication-",
-        desc: "Advantages: Here are the detailed advantages of the proposed project: GitHub Open Source Project: Hosting the project on GitHub as an open-source repository provides numerous benefits: Collaboration - Allows developers worldwide to contribute, share ideas, and collaborate on improving the project. Transparency - Enhances transparency by providing visibility into the project's codebase, development progress, and discussions. Community Engagement - Fosters a vibrant community around the project, facilitating knowledge sharing and fostering innovation. Version Control - Utilizes Git for version control, enabling efficient management of project changes and updates. Innovative Java Implementation: Introduces new ideas and innovative solutions within the Java ecosystem, showcasing the versatility and adaptability of Java technology. Demonstrates cutting-edge techniques and best practices in Java programming, contributing to the advancement of the Java development community. User-Friendly GUI (Graphical User Interface): Prioritizes user experience by designing an intuitive and visually appealing graphical interface using Java Swing and AWT libraries. Enhances usability and accessibility, making the application more engaging and easier to navigate for users of all skill levels. Auto-Generated Excel Sheets: Implements functionality to automatically generate Excel sheets containing user data, scores, and other relevant information. Streamlines data management and reporting processes, saving time and effort for administrators and users alike. Enables seamless integration with external tools and systems for further analysis and processing of data. OTP Authentication: Incorporates OTP (One Time Password) authentication for user registration and login, enhancing security and mitigating the risk of unauthorized access. Provides an additional layer of protection against password-related vulnerabilities, ensuring robust user authentication mechanisms. Quiz System: Introduces a dynamic and engaging quiz system for users to participate in, offering entertainment and educational value. Enhances user interaction and retention, driving user engagement and promoting active participation within the application. Database Support (MySQL): Utilizes MySQL database management system to store and manage user data, quiz questions, scores, and other application-related information. Ensures data integrity, scalability, and reliability, providing a robust foundation for the application's backend functionality. Maven Dependencies: Manages project dependencies and build processes efficiently using Maven, simplifying project configuration and management. Facilitates collaboration and ensures consistency across development environments, enhancing project scalability and maintainability. In summary, the proposed project offers a multitude of advantages, ranging from its open-source nature on GitHub to its innovative Java implementation, user-friendly GUI, auto-generated Excel sheets, OTP authentication, quiz system, database support, and Maven-based project management. These advantages collectively contribute to the project's success, fostering collaboration, innovation, and user satisfaction.",
+        desc: "Advantages: Here are the detailed advantages of the proposed project: GitHub Open Source Project: Hosting the project on GitHub as an open-source repository provides numerous benefits: Collaboration - Allows developers worldwide to contribute, share ideas, and collaborate on improving the project. Transparency - Enhances transparency by providing visibility into the project's codebase, development progress, and discussions. Community Engagement - Fosters a vibrant community around the project, facilitating knowledge sharing and fostering innovation. Version Control - Utilizes Git for version control, enabling efficient management of project changes and updates. Innovative Java Implementation: Introduces new ideas and innovative solutions within the Java ecosystem, showcasing the versatility and adaptability of Java technology. Demonstrates cutting-edge techniques and best practices in Java programming, contributing to the advancement of the Java development community. User-Friendly GUI (Graphical User Interface): Prioritizes user experience by designing an intuitive and visually appealing graphical interface using Java Swing and AWT libraries. Enhances usability and accessibility, making the application more engaging and easier to navigate for users of all skill levels. Auto-Generated Excel Sheets: Implements functionality to automatically generate Excel sheets containing user data, scores, and other relevant information. Streamlines data management and reporting processes, saving time and effort for administrators and users alike. Enables seamless integration with external tools and systems for further analysis and processing of data. OTP Authentication: Incorporates OTP (One Time Password) authentication for user registration and login, enhancing security and mitigating the risk of unauthorized access. Provides an additional layer of protection against password-related vulnerabilities, ensuring robust user authentication mechanisms. ",
         LinkedLink: "https://www.linkedin.com/posts/kiranjeet-kour-3823ba268_java-mysql-swing-activity-7200056916968943616-aTRM?utm_source=share&utm_medium=member_desktop",
         video : javaProject,
         bg : "border-yellow-500"

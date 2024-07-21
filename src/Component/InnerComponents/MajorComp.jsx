@@ -1,10 +1,10 @@
 
-import { BackgroundGradient } from '../ui/background-gradient'
+import { BackgroundGradient } from '../../../utils/ui/background-gradient'
 import { useNavigate } from 'react-router-dom';
 export default function MajorComp({ id, img, title, tech, link }) {
     const navigate = useNavigate();
     function onClickPushRoute(id) {
-        navigate(`/MajorProject/${id}`);
+        navigate(`/Portfolio/MajorProject/${id}`);
     }
     return (
         <div className='p-0 m-auto mt-6'>

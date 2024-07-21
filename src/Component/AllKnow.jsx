@@ -2,7 +2,7 @@ import React from "react";
 import Know from "./InnerComponents/Know";
 import WhatI from "./InnerComponents/WhatI";
 import { Frondend,Backend,Database } from "../Data";
-import { GlareCard } from "./ui/glare-card";
+import { GlareCard } from "../../utils/ui/glare-card";
 export default function AllKnow() {
   
   return (

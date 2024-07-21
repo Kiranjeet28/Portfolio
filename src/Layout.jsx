@@ -8,7 +8,7 @@ import Header from './Component/Header';
 function Layout() {
  
  // Toggle
- const [themeMode, setThemeMode] = useState('dark');
+ const [themeMode, setThemeMode] = useState('light');
 
  const lightTheme = () => {
    setThemeMode('light');

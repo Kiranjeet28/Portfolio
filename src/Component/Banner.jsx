@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import IBanner from './InnerComponents/IBanner';
-import { BackgroundGradient } from './ui/background-gradient';
+import { BackgroundGradient } from '../../utils/ui/background-gradient';
 export default function Banner() {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
