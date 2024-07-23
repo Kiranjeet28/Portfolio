@@ -2,12 +2,13 @@
 import AllKnow from './Component/AllKnow';
 import MoreP from './Component/MoreP';
 import MP from './Component/InnerComponents/MP';
-import { MParr, MajorText } from './Data';
+import { MParr } from './Data';
 import MajorProject from './Component/MajorProject';
-import { TypewriterEffectSmooth } from '../utils/ui/typewriter-effect';
 import 'aos/dist/aos.css';
 import Banner from './Component/Banner';
 import { Expericence } from './Component/Expericence';
+import TypingAnimation from '../utils/ui/TypingAnimation';
+
 function App() {
  
 
@@ -18,8 +19,10 @@ function App() {
         
        
        {/* Major Project */}
-       <TypewriterEffectSmooth
-       className='ml-6 md:ml-8 mt-4 mb-0 ' words={MajorText} />
+       <TypingAnimation
+      className="text-gray-100 ml-7 font-bold mt-3 p-3 pb-0 text-left  text-2xl mb-2 dark:text-gray-800 "
+      text="Major Projects"
+    />
       <MajorProject/>
       {/* What I know  */}
       <p 

@@ -57,7 +57,7 @@ export const MParr = [
  export const Frondend = [{
     id: 1,
     name: "HTML",
-    bg: "border-orange-400"
+    bg: "border-orange-800"
   },
   {
     id: 3,
@@ -68,19 +68,19 @@ export const MParr = [
   {
     id: 2,
     name: "JavaScript",
-    bg: "border-yellow-200"
+    bg: "border-yellow-400"
 
   },
   {
     id: 4,
     name: "React JS",
-    bg: "border-rose-500"
+    bg: "border-rose-700"
 
   },
   {
     id: 5,
     name: "Tailwind",
-    bg: "border-red-700"
+    bg: "border-red-800"
 
   },
   {
@@ -91,12 +91,12 @@ export const MParr = [
   {
     id: 7,
     name: "Next Js ",
-    bg: "border-lime-500"
+    bg: "border-lime-200"
   },
   {
     id: 8,
     name: "Spring",
-    bg: "border-pink-600"
+    bg: "border-pink-400"
   }]
 
   // Backend array 
@@ -104,17 +104,17 @@ export const MParr = [
     {
       id: 1,
       name: "Java",
-      bg: "border-green-500"
+      bg: "border-green-400"
     },
     {
       id: 2,
       name: "Node JS",
-      bg: "border-orange-600"
+      bg: "border-orange-400"
     },
     {
       id: 3,
       name: "Express",
-      bg: "border-blue-600"
+      bg: "border-blue-400"
     } ,{
       id: 4,
       name: "Rocket",
@@ -138,7 +138,7 @@ export  const Database = [
     {
       id: 1,
       name: "MySQL",
-      bg: "border-green-700"
+      bg: "border-green-400"
     },
     {
       id: 2,
