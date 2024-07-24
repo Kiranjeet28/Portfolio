@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import IBanner from './InnerComponents/IBanner';
-import { BackgroundGradient } from '../../utils/ui/background-gradient';
+import { SparklesCore } from '../../utils/ui/sparkles';
 export default function Banner() {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -18,13 +18,22 @@ export default function Banner() {
     return (
         <div>
         {isSmallScreen ? (
-             <BackgroundGradient
-             backgroundColor="black"
-             baseHue={190}
-             rangeY={40}
-           >
-                <IBanner />
-            </BackgroundGradient>
+            <div>
+
+            <div className=" absolute inset-0 h-60">
+                
+                                <SparklesCore
+                                id="tsparticlesfullpage"
+                                background="transparent"
+                                minSize={0.10}
+                                maxSize={2.4}
+                                particleDensity={200}
+                                className="w-full h-full"
+                                particleColor="#696ef2"
+                                />
+                            </div>
+                                    <IBanner />
+                                </div>
         ) : (
             <IBanner />
         )}

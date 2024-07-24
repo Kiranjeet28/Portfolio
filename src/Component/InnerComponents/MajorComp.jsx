@@ -1,15 +1,13 @@
 
-import { BackgroundGradient } from '../../../utils/ui/background-gradient'
 import { useNavigate } from 'react-router-dom';
-export default function MajorComp({ id, img, title, tech, link }) {
+export default function MajorComp({ id, img, title, tech}) {
     const navigate = useNavigate();
     function onClickPushRoute(id) {
         navigate(`/Portfolio/MajorProject/${id}`);
     }
     return (
         <div className='p-0 m-auto mt-6'>
-            <BackgroundGradient >
-                <div className=' w-72   bg-white  dark:hover:bg-gray-800  dark:bg-gray-900 dark:text-gray-100 shadow-black  rounded-lg hover:bg-gray-300  hover:transform-cpu hover:scale-90'>
+                <div className=' w-72   bg-white  dark:hover:bg-gray-800  dark:bg-gray-900 dark:text-gray-100 shadow-black  rounded-lg hover:bg-gray-300  '>
                     <section className=' '>
 
                         <img src={img}
@@ -29,7 +27,6 @@ export default function MajorComp({ id, img, title, tech, link }) {
                     </a>
 
                 </div>
-            </BackgroundGradient >
         </div>
     )
 }

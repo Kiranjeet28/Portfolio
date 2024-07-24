@@ -187,3 +187,20 @@ export  const Database = [
         bg : "border-yellow-500"
     }
 ];
+
+export const Exp =[
+  {id: 1,
+    
+    Companyname : 
+    "Voltsec.io"
+    ,Status : "3-month Intership",
+    imgLink : "https://media.licdn.com/dms/image/C4D0BAQE4zrSqKuJSGw/company-logo_200_200/0/1652309533645?e=2147483647&v=beta&t=EKGQ-xS3kF1WOdjXq9Cteo87_rJHsTvgzw_OisScg6o"
+  },
+  {
+    id: 2,
+    Companyname : 
+    "RD Group of Industries"
+    ,Status : "Currently",
+    imgLink : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZb4x-qQH7-jt-V4JFwEIE7F4hCAuzXKIyg&s"
+  }
+]

@@ -6,8 +6,8 @@ import { MParr } from './Data';
 import MajorProject from './Component/MajorProject';
 import 'aos/dist/aos.css';
 import Banner from './Component/Banner';
-import { Expericence } from './Component/Expericence';
 import TypingAnimation from '../utils/ui/TypingAnimation';
+import ExpComponents from './Component/ExpComponents';
 
 function App() {
  
@@ -39,7 +39,7 @@ function App() {
       data-aos-duration='500'>
          Experience
       </p>
-<Expericence/>
+<ExpComponents/>
       <div className= ''>
       <p 
       className='text-gray-200 ml-7 font-semibold mt-8 p-3 pb-0 text-left  text-xl mb-2 dark:text-gray-800  md:mb-4 '

@@ -21,7 +21,7 @@ export default function IBanner() {
     // };
 
     return (
-        <div className=' p-4 h-auto flex flex-col md:flex-wrap md:bg-no-repeat md:bg-cover md:bg-bg'>
+        <div className='z-30 p-4 h-auto flex flex-col md:flex-wrap md:bg-no-repeat md:bg-cover md:bg-bg'>
             <div className='flex md:flex-col '>
                 {/* <div className="rounded-[50%] p-0 m-0 md:mt-2  md:h-[21vh] h-28 md:max-w-48 md:relative md:self-center md:bottom-[-40px]   ">
                 <FlippingCoin imageUrl={image} onFlip={handleFlip} /> 
