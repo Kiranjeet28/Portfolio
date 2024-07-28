@@ -29,8 +29,8 @@ export const CardContainer = ({
     if (!containerRef.current) return;
     const { left, top, width, height } =
       containerRef.current.getBoundingClientRect();
-    const x = (e.clientX - left - width / 2) / 50;
-    const y = (e.clientY - top - height / 2) / 50;
+    const x = (e.clientX - left - width / 2) / 40;
+    const y = (e.clientY - top - height / 2) / 40;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
@@ -136,7 +136,7 @@ export const CardItem = ({
   return (
     <Tag
       ref={ref}
-      className={cn("md:w-64 w-auto transition duration-200 ease-linear", className)}
+      className={cn("md:w-96 w-auto transition duration-200 ease-linear", className)}
       {...rest}
     >
       {children}

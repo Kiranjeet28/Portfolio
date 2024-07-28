@@ -38,7 +38,9 @@ export default function IBanner() {
                     <Highlight className=' bold  text-2xl font-bold font-mono p-0 m-0 md:relative md:bottom-40 md:text-4xl  md:m-3  text-slate-100 '>Kiranjeet Kour </Highlight>
 
                     <div className='flex flex-row items-center justify-center text-[16px] p-1 m-0 pb-2 md:text-[25px] md:mt-0 mt-4 md:font-semibold font-bold dark:text-black shadow-black text-gray-100 md:text-black overflow md:ml-0 ml-3  '>
-                    <h3 className=" ">Full Stack 
+                    <h3 className=" ">Full&nbsp;   
+                     </h3>
+                     <h3 className=" ">Stack 
                      </h3>
                      <FlipWords className=' from-indigo-500 rounded-xl h-7 md:h-10 md:w-14 font-bold via-indigo-400 to-indigo-700 bg-gradient-to-tr w-12 text-center text-white text-[17px] md:text-[24px] md:m-1 my-0 mx-1' words={words} /> 
                      <h3 className="  ">Developer</h3> 

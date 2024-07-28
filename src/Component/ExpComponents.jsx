@@ -10,6 +10,7 @@ export default function ExpComponents() {
             Companyname={item.Companyname}
             Status = {item.Status}
             imgLink = {item.imgLink}
+            link = {item.link}
           />
         </div>
       ))}

@@ -25,9 +25,9 @@ export default function Banner() {
                                 <SparklesCore
                                 id="tsparticlesfullpage"
                                 background="transparent"
-                                minSize={0.10}
-                                maxSize={2.4}
-                                particleDensity={200}
+                                minSize={1.10}
+                                maxSize={3.4}
+                                particleDensity={400}
                                 className="w-full h-full"
                                 particleColor="#696ef2"
                                 />
