@@ -11,7 +11,10 @@ export default function IBanner() {
     // const [isFlipped, setIsFlipped] = useState(false); // Flag to track flip state
   
     useEffect(() => {
-      AOS.init();
+      AOS.init({
+      once: true,
+
+      });
     }, []);
   
     // const handleFlip = () => {

@@ -7,6 +7,7 @@ export default function MajorProject() {
     <div className='flex flex-wrap equal-height'>
       {projects.map(project => (
         <MajorComp
+        data-aos='fade-up' data-aos-duration='500'
           key={project.id}
           id={project.id}
           img={project.img}

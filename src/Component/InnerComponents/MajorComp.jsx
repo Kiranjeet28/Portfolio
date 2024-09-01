@@ -6,7 +6,8 @@ export default function MajorComp({ id, img, title, tech}) {
         navigate(`/Portfolio/MajorProject/${id}`);
     }
     return (
-        <div className='p-0 m-auto mt-6'>
+        <div className='p-0 m-auto mt-6'
+        data-aos='fade-up' data-aos-duration='500'>
                 <div className=' w-72   bg-white  dark:hover:bg-gray-800  dark:bg-gray-900 dark:text-gray-100 shadow-black  rounded-lg hover:bg-gray-300  '>
                     <section className=' '>
 
